@@ -1,0 +1,21 @@
+[submodule "components/mc_bt"]
+	path = components/mc_bt
+	url = git@github.com:MbedCraft/mc_bt.git
+[submodule "components/mc_assert"]
+	path = components/mc_assert
+	url = git@github.com:MbedCraft/mc_assert.git
+[submodule "components/mc_cmd_system"]
+	path = components/mc_cmd_system
+	url = git@github.com:MbedCraft/mc_cmd_system.git
+[submodule "components/mc_cmd_nvs"]
+	path = components/mc_cmd_nvs
+	url = git@github.com:MbedCraft/mc_cmd_nvs.git
+[submodule "components/mc_console"]
+	path = components/mc_console
+	url = git@github.com:MbedCraft/mc_console.git
+[submodule "components/mc_fs"]
+	path = components/mc_fs
+	url = git@github.com:MbedCraft/mc_fs.git
+[submodule "components/mc_nvs"]
+	path = components/mc_nvs
+	url = git@github.com:MbedCraft/mc_nvs.git
