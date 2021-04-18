@@ -1,0 +1,31 @@
+menu "btplayer configuration"
+
+    depends on BT_ENABLED
+    depends on BT_SSP_ENABLED
+    depends on BT_A2DP_ENABLE
+
+    config BT_DEVICE_NAME
+        string "Bluetooth device name"
+        default "BTPlayer"
+        help
+            This is the Bluetooth device name
+
+    config I2S_WS_PIN
+        int "I2S WORD SELECT GPIO"
+        default 26
+        help
+            GPIO number to use for I2S WS Driver.
+
+    config I2S_BCK_PIN
+        int "I2S BIT CLOCK GPIO"
+        default 27
+        help
+            GPIO number to use for I2S BCK Driver.
+
+    config I2S_DATA_PIN
+        int "I2S DATA GPIO"
+        default 25
+        help
+            GPIO number to use for I2S Data Driver.
+
+endmenu
