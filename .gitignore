@@ -58,3 +58,6 @@ dkms.conf
 *.swp
 *.swo
 
+# Espressif specifics
+sdkconfig*
+build
