@@ -1,21 +1,37 @@
+/* ------------------------------------------------------------------------- *\
+ * Standard Includes
+ * ------------------------------------------------------------------------- */
 #include <stdio.h>
 #include <string.h>
 
+/* ------------------------------------------------------------------------- *\
+ * FreeRTOS specific includes
+ * ------------------------------------------------------------------------- */
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
+/* ------------------------------------------------------------------------- *\
+ * Espressif specific includes
+ * ------------------------------------------------------------------------- */
 #include "esp_console.h"
 #include "esp_system.h"
 #include "esp_log.h"
 #include "argtable3/argtable3.h"
 #include "linenoise/linenoise.h"
 
-#include "mc_cmd_system.h"
+/* ------------------------------------------------------------------------- *\
+ * MbedCraft includes
+ * ------------------------------------------------------------------------- */
+#include "mc_cmd_aac.h"
+#include "mc_cmd_fs.h"
 #include "mc_cmd_nvs.h"
+#include "mc_cmd_system.h"
 
 #include "mc_console.h"
 #include "mc_nvs.h"
 #include "mc_fs.h"
+
+#include "app_btplayer.h"
 
 #define CONSOLE_TASK_STACK_SIZE 4*1024
 #define CONSOLE_TASK_PRIORITY 2
@@ -51,6 +67,8 @@ void app_console_init(const char * const mount_path, size_t mount_path_size) {
     /* Register console commands */
     mc_cmd_system_register();
     mc_cmd_nvs_register();
+    mc_cmd_fs_register();
+    mc_cmd_aac_register();
 
     /* Start tasks */
     BaseType_t err = xTaskCreate(
