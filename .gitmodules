@@ -19,3 +19,6 @@
 [submodule "components/mc_nvs"]
 	path = components/mc_nvs
 	url = git@github.com:MbedCraft/mc_nvs.git
+[submodule "components/mc_aac_decoder"]
+	path = components/mc_aac_decoder
+	url = git@github.com:MbedCraft/mc_aac_decoder.git
