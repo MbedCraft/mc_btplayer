@@ -25,3 +25,6 @@
 [submodule "components/mc_cmd_aac"]
 	path = components/mc_cmd_aac
 	url = git@github.com:MbedCraft/mc_cmd_aac.git
+[submodule "components/mc_cmd_fs"]
+	path = components/mc_cmd_fs
+	url = git@github.com:MbedCraft/mc_cmd_fs.git
