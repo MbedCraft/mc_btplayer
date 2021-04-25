@@ -22,3 +22,6 @@
 [submodule "components/mc_aac_decoder"]
 	path = components/mc_aac_decoder
 	url = git@github.com:MbedCraft/mc_aac_decoder.git
+[submodule "components/mc_cmd_aac"]
+	path = components/mc_cmd_aac
+	url = git@github.com:MbedCraft/mc_cmd_aac.git
